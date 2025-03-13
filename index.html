@@ -5,12 +5,13 @@
     <!-- Meta data -->
     <meta charset="UTF-8">
     <!-- For responsive purpose -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Portofolio Annisaa</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css\style.css">
 </head>
+
 
 <body>
     <!-- Main header -->
@@ -20,10 +21,10 @@
 
          <!-- Navigation -->
          <nav>
-            <a href="#"class="no-border-radius-right">Home</a>
-            <a href="#"class="no-border-radius">Our Profile</a>
-            <a href="#"class="no-border-radius">Achievement</a>
-            <a href="#"class="no-border-radius-left">Message Us</a>
+            <a href="#">Home</a>
+            <a href="#my-profile-section">My Profile</a>
+            <a href="#my-hobbies" >My hobbies</a>
+            <a href="#message-me">Message Me</a>
          </nav>
      </header>
 
@@ -34,50 +35,154 @@
         <!-- Home Content -->
          <section id="home">
             <header>
-                <h1>Hi User, Welcome to my portofolio</h1>
-                <p>Here you can see my profile, achievement, and message me</p>
+                <h1>Hi <span id="name">User</span> Welcome to my portofolio !</h1>
+                <p><i>Here you can see my profile, achievement, and message me.</i></p>
             </header>
 
             <!-- Banner Autoslide -->
-             <div class="banner-img"></div>
+           <div class="banner-img banner-1"></div>
+           <div class="banner-img banner-2"></div>
+           <div class="banner-img banner-3"></div>
          </section>
 
-     <hr />
-
-     <!-- Our Profile Content -->
-      <section id="our-profile">
+     <!-- My Profile Content -->
+      <section id="my-profile-section">
         <header>
-            <h1>Our Profile</h1>
+            <h1>My Profile</h1>
         </header>
 
-        <!-- Our Profile Content -->
-         <div class="our-profile-content">
-            <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+        <!-- MY Profile Content -->
+         <div class="my-profile-content">
+          <div class="main-isi">
+            <div class="main-foto">
+              <img src="assets\8.jpg" alt="foto-profil" width="200" height="200"/>
+              <br>
+              <span>Student | Tech Enthusiast</span>
+            </div>
+            <div class="main-about">
+              <p>Hallo, perkenalkan nama saya Annisaa Nada Thahirah, umur 18 tahun, asal Kota Banda Aceh.</p>
+              <p>Disini saya baru saja mempelajari software engineering guna mengasah otak saya terhadap skill baru. Skill lain yang sudah saya kuasai adalah mendesain sebuah poster di canva dan piscart. Jadi, karena saya masih berproses dalam mempelajari skill(SE) ini, saya harap anda dapat membantu saya agar lebih berkembang dengan memasukkan kritik & saran pada form kotak pesan dibawah yaa </p>
+              <p>Terimakasih.</p>
+            </div>
          </div>
       </section>
 
-      <!-- Achievement Content -->
-       <section id="achievement">
+      <!-- My Hobbies Content -->
+       <section id="my-hobbies">
         <header>
-            <h1>Achievement</h1>
+            <h1>My Hobbies</h1>
         </header>
 
-        <!-- Achievement Content -->
-         <div class="achievement-content">
-            <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+        <!-- My hobbbies Content -->
+         <div class="myhobbies-content">
+            <div class="bulat">
+                <img src="assets\4.jpg" alt="Paskibraka wanita" width="200" height="200"/>
+        <p><b>Mendesain poster</b></p>
+            </div>
+
+            <div class="bulat">
+                <img src="assets\5.jpg" alt="medali" width="200" height="200"/>
+        <p><b>Memasak</b></p>       
+            </div>
+           
+            <div class="bulat">
+                <img src="assets\6.jpg" alt="lukis" width="200" height="200"/>
+        <p><b>Olahraga</b></p>       
+            </div>
+
+            <div class="bulat">
+                <img src="assets\7.jpg" alt="Design Canva" width="200" height="200"/>
+        <p><b>Membaca buku</b></p>       
+            </div>
+           
          </div>
        </section>
 
-       <!-- Message Us Content -->
-        <section id="message-us">
+       <!-- Message Me Content -->
+        <section id="message-me">
             <header>
-                <h1>Message Us</h1>
+              <h1 style="
+              background-color: white; ">Message Me</h1>
             </header>
 
-            <!-- Message Us Content -->
-             <div class="message-us-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
-             </div>
+            <!-- Message Me Content -->
+            <div class="main-pesan">
+                <div class="main-form">
+                  <form name="message-form" onsubmit="kirim(); return false">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><label for="nama">Nama</label></td>
+                          <td>:
+                            <input type="text" name="nama" id="nama" required>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><label for="ttl">Tanggal Lahir</label></td>
+                          <td>:
+                            <input type="date" name="ttl" id="ttl" required>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><label for="gender">Jenis Kelamin</label></td>
+                          <td>:
+                            <input type="radio" name="gender" id="laki-laki" value="Laki-laki" required><label for="laki-laki">Laki-laki</label>
+                            <input type="radio" name="gender" id="perempuan" value="Perempuan" required><label for="perempuan">Perempuan</label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="position: absolute;"><label for="pesan">Pesan</label></td>
+                          <td>
+                            <textarea name="pesan" id="pesan" cols="30" rows="5" required></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <input type="submit" name="submit" value="Kirim">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+                </div>
+                <div class="main-data">
+                  <table>
+                    <tbody>
+                      <tr class="td-waktu">
+                        <td><label for="waktu">Waktu</label></td>
+                        <td>
+                          <span id="waktu"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><label for="nama">Nama</label></td>
+                        <td>:
+                          <span id="nama2"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><label for="ttl">Tanggal Lahir</label></td>
+                        <td>:
+                          <span id="ttl2"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><label for="gender">Jenis Kelamin</label></td>
+                        <td>:
+                          <span id="gender2"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><label for="pesan">Pesan</label></td>
+                        <td>:
+                          <span id="pesan2"></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
         </section>
      </main>
 
@@ -86,6 +191,8 @@
         <p>&copy; 2025 Portofolio Annisaa</p>
      </footer>
 
+     <!-- JavaScript -->
+     <script src="js/script.js"></script>
 
 </body>
 
