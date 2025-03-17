@@ -1,10 +1,5 @@
 /* Ini file css */
 
-.container {
-  max-width: 1200px;
-  margin: 0px auto;
-}
-
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -22,8 +17,11 @@
 
 body{
   font-family: inherit;
+  margin: 0;
+  padding: 0;
 }
 
+/* navbar css */
 nav {display: flex
     ;
 }
@@ -34,6 +32,8 @@ nav>a {
   text-decoration: none;
   color: black;
 }
+
+/* Bznner css */
 
 .banner-img {
     background-image: url(https://picsum.photos/300);
@@ -55,7 +55,7 @@ nav>a {
     background-image: url(../assets/3.jpg);
 }
 
-
+/* space header */
 
 #home>header>h1 {
   color: rgb(6 9 47);
@@ -64,7 +64,10 @@ nav>a {
 #home>header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+/* My profile css */
 
 .my-profile-content {
     height: 500px;
@@ -73,7 +76,6 @@ nav>a {
     background-color: rgb(197, 211, 224);
 }
 
-/* profile css */
 .main-isi {
   display: flex;
   flex-direction: column;
@@ -92,13 +94,16 @@ nav>a {
 .main-about {
   text-align: justify;
   line-height: 1.5em;
+  padding: 30px 150px;
 }
 
 .main-about p {
   font-family: sans-serif;
   margin-bottom: 10px;
-  font-weight: 12vw;
+  font-weight: 100;
 }
+
+/* Myhobbies css */
 
 .myhobbies-content {
     margin: 40px 0px 20px;
@@ -128,9 +133,13 @@ nav>a {
     text-align: center;
 }
 
-footer {
-    text-align: center;
+.footer {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1em;
+  text-align: center;
 }
+
 
 /* form */
 
@@ -214,15 +223,9 @@ footer {
   .main-foto span {
     font-size: 11px;
   }
+  
   .main-about {
     padding: 20px 5%;
   }
 
-
 }
-
-
-
-
-
-
